@@ -13,3 +13,9 @@
     width: 800px;
     padding: 50px;
 }
+
+.app {
+    &__title {
+        text-align: center;
+    }
+}

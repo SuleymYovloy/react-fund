@@ -1,13 +1,14 @@
 import "./index.scss";
 
-const PostItem = (props) => {
-    console.log(props);
+const PostItem = ({ post }) => {
     return (
         <div>
             <div className="post">
                 <div className="post__content">
-                    <strong>1. JavaScript</strong>
-                    <div>JavaScript - Programming language</div>
+                    <strong>
+                        {post.id}. {post.title}
+                    </strong>
+                    <div>{post.body}</div>
                 </div>
                 <div className="post__btns">
                     <button>Delete Post</button>
